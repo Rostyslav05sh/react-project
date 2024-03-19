@@ -1,3 +1,4 @@
 export * from './MoviePage'
-export * from './LoginPage'
+export * from './SearchPage'
+export * from './GenresPage'
 export * from './MovieInfoPage'

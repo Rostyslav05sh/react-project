@@ -4,7 +4,7 @@ import {apiService} from "./ApiService";
 import {urls} from "../constants";
 
 const searchService = {
-    getMovieByKeyWord: (word: string, page: number):IRes<ISearch> => apiService.get(urls.search.searchByKeyWord(word), {params: {page}})
+    getMovieByKeyWord: (word: string, page: string):IRes<ISearch> => apiService.get(urls.search.searchByKeyWord(word), {params: {page}})
 }
 
 export {

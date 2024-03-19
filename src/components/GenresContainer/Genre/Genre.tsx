@@ -13,7 +13,7 @@ const Genre: FC<IProps> = ({genre}) => {
 
     return (
         <div>
-            <div onClick={() => navigate(`genre/${id}`)}>{name}</div>
+            <div onClick={() => navigate(`/genre/${id}`)}>{name}</div>
         </div>
     );
 };

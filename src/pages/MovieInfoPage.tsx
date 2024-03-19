@@ -7,16 +7,16 @@ import {MovieInfo} from "../components";
 
 const MovieInfoPage = () => {
 
-    const {state} = useAppLocation<{ movie: IMovieRes, movieByKeyWord: IMovieRes }>();
+    const {state} = useAppLocation<{ movie: IMovieRes, movieBySearch: IMovieRes, movieByKeyWord: IMovieRes }>();
     const [movieInfo, setMovieInfo] = useState<IMovieRes>(null)
     const dispatch = useAppDispatch();
     const {id} = useParams();
 
+    console.log(state)
+
     useEffect(() => {
-        if (state?.movie) {
-            setMovieInfo(state.movie);
-        } else if (state?.movieByKeyWord) {
-            setMovieInfo(state.movieByKeyWord);
+        if (state?.movie || state?.movieByKeyWord || state?.movieBySearch) {
+            setMovieInfo(state.movie || state.movieByKeyWord || state.movieBySearch);
         } else {
             dispatch(movieActions.getMovieById({id})).then((data) => {
                 if (data.payload !== null && data.payload !== undefined) {

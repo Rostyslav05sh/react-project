@@ -12,17 +12,15 @@ const MoviesList = () => {
 
     console.log(page)
 
-    useEffect(() => {
-        dispatch(movieActions.getAll({page}))
+    useEffect( () => {
+         dispatch(movieActions.getAll({page}))
     }, [page, dispatch]);
-
-    const movies = results
 
     return (
         <div>
             <button onClick={prev} disabled={+page <= 1}>Previous</button>
             <button onClick={next} disabled={+page >= 500}>Next</button>
-            {movies.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
+            {results && results.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
         </div>
     );
 };

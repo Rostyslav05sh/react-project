@@ -1,9 +1,8 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
-import {AuthLayout, MainLayout} from "./layouts";
-import {LoginPage, MovieInfoPage, MoviePage} from "./pages";
+import {MainLayout} from "./layouts";
+import {GenresPage, MovieInfoPage, MoviePage} from "./pages";
 import React from "react";
-import {AuthRequired} from "./hoc";
-import {GenresPage} from "./pages/GenresPage";
+import {SearchForm} from "./components/SearchContainer/SearchForm";
 
 const router = createBrowserRouter([
     {
@@ -12,21 +11,18 @@ const router = createBrowserRouter([
                 index: true, element: <Navigate to={'movies'}/>
             },
             {
-                element: <AuthRequired><AuthLayout/></AuthRequired>, children: [
-                    {
-                        path: 'movies', element: <MoviePage/>
-                    },
-                    {
-                        path: '/movieInfo', element: <MovieInfoPage/>
-                    },
-                    {
-                        path: '/genre/:id', element: <GenresPage/>
-                    }
-                ]
+                path: 'movies', element: <MoviePage/>
             },
             {
-                path: 'login', element: <LoginPage/>
-            }
+                path: 'movieInfo', element: <MovieInfoPage/>
+            },
+            {
+                path: 'genre/:id', element: <GenresPage/>
+            },
+            {
+                path: 'search', element: <SearchForm/>
+
+            },
         ]
     }
 ])

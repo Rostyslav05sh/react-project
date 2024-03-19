@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/slices/SearchSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/usePageQuery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/usePageQuery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/searchInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/searchInterface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MovieInfoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MovieInfoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/moviesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/moviesSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -44,24 +62,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "js.last.introduce.type": "CONST",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/admin/IdeaProjects/react-project/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/admin/IdeaProjects/react-project/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/MoviesContainer" />
@@ -79,6 +97,7 @@
       <updated>1710758056814</updated>
       <workItem from="1710758057812" duration="346000" />
       <workItem from="1710758437295" duration="23736000" />
+      <workItem from="1710857738697" duration="21331000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -88,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710782151694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1710857758882</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710857758882</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

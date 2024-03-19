@@ -1,5 +1,5 @@
 import {AxiosError} from "axios";
-import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {createAction, createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {IMovie, IMovieRes} from "../../interfaces";
 import {movieService} from "../../services";
@@ -7,12 +7,12 @@ import {urls} from "../../constants";
 
 interface IState {
     page: string,
-    results: IMovieRes[]
+    results: IMovieRes[],
 }
 
 const initialState: IState = {
-    page: '1',
-    results: []
+    page: null,
+    results: [],
 }
 
 const getAll = createAsyncThunk<IMovie, { page: string }>(
@@ -36,7 +36,7 @@ const getMovieById = createAsyncThunk<IMovie, { id: string }>(
     'getMovieById/moviesSlice',
     async ({id}, {rejectWithValue}) => {
         try {
-            const {data} = await movieService.getMovieById(urls.movies.movieById(id));
+            const {data} = await movieService.getMovieById(id);
             return data
         } catch (e) {
             const err = e as AxiosError
@@ -48,6 +48,8 @@ const getMovieById = createAsyncThunk<IMovie, { id: string }>(
         }
     }
 )
+
+export const clearMovies = createAction('movies/clearMovies');
 
 const moviesSlice = createSlice({
     name: 'movieSlice',
@@ -63,6 +65,9 @@ const moviesSlice = createSlice({
                 state.results = action.payload.results
                 state.page = action.payload.moviePage
             })
+            .addCase(clearMovies, state => {
+                state.results = []
+            })
     }
 })
 
@@ -71,7 +76,8 @@ const {reducer: movieReducer, actions} = moviesSlice;
 const movieActions = {
     ...actions,
     getAll,
-    getMovieById
+    getMovieById,
+    clearMovies
 }
 
 export {

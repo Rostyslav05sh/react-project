@@ -1,5 +1,5 @@
 export interface ISearch {
-    page: number | null,
+    page: number,
     results: ISearchRes[]
 }
 
