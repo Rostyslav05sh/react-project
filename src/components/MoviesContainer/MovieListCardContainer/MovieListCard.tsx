@@ -1,6 +1,7 @@
 import React, {FC, PropsWithChildren} from "react";
 import {Rating} from "@mui/material";
 import {useNavigate} from "react-router-dom";
+
 import {IMovieRes} from "../../../interfaces";
 import {poster} from "../../../constants";
 
@@ -20,7 +21,7 @@ const MovieListCard: FC<IProps> = ({movie}) => {
         <div onClick={() => navigate('/movieInfo', {state: {movie}})}>
             <div>{title}</div>
             <img src={image} alt={`poster of ${title} movie`}/>
-            <Rating name="half-rating-read" defaultValue={vote_average/2} precision={0.5} readOnly size={"large"} />
+            <Rating name="half-rating-read" defaultValue={vote_average / 2} precision={0.5} readOnly size={"large"}/>
         </div>
     );
 };

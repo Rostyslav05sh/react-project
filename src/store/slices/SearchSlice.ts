@@ -1,25 +1,26 @@
-import {createAction, createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {AxiosError} from "axios";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+
 import {ISearch, ISearchRes} from "../../interfaces";
 import {searchService} from "../../services";
-import {AxiosError} from "axios";
 
 interface IState {
-   page: string
-   result: ISearchRes[]
+    page: string
+    result: ISearchRes[]
 }
 
-const initialState:IState = {
+const initialState: IState = {
     page: null,
     result: []
 }
 
-const getAll = createAsyncThunk<ISearch, {keyWord: string, page: string}>(
+const getAll = createAsyncThunk<ISearch, { keyWord: string, page: string }>(
     'getAll/searchSlice',
     async ({keyWord, page}, {rejectWithValue}) => {
         try {
             const {data} = await searchService.getMovieByKeyWord(keyWord, page);
             return data
-        }catch (e) {
+        } catch (e) {
             const err = e as AxiosError
             return rejectWithValue(err.response.data);
         }
@@ -29,9 +30,7 @@ const getAll = createAsyncThunk<ISearch, {keyWord: string, page: string}>(
 const searchSlice = createSlice({
     name: 'searchSlice',
     initialState,
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: builder => {
         builder
             .addCase(getAll.fulfilled, (state, action) => {

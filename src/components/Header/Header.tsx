@@ -1,8 +1,7 @@
-import css from './Header.module.css'
 import {useNavigate} from "react-router-dom";
+
+import css from './Header.module.css'
 import {Genres} from "../GenresContainer";
-import {usePageQuery} from "../../hooks";
-import {SearchForm} from "../SearchContainer/SearchForm";
 
 const Header = () => {
 

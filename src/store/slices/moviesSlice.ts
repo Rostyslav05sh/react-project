@@ -3,7 +3,6 @@ import {createAction, createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {IMovie, IMovieRes} from "../../interfaces";
 import {movieService} from "../../services";
-import {urls} from "../../constants";
 
 interface IState {
     page: string,

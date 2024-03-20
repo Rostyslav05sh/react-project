@@ -10,10 +10,8 @@ const MoviesList = () => {
     const dispatch = useAppDispatch();
     const {page, prev, next} = usePageQuery();
 
-    console.log(page)
-
-    useEffect( () => {
-         dispatch(movieActions.getAll({page}))
+    useEffect(() => {
+        dispatch(movieActions.getAll({page}))
     }, [page, dispatch]);
 
     return (

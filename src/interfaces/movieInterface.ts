@@ -12,4 +12,10 @@ export interface IMovieRes {
     release_date: string;
     title: string;
     vote_average: number;
+    genres: ISearchGenre[]
+}
+
+export interface ISearchGenre {
+    id: number;
+    name: string;
 }

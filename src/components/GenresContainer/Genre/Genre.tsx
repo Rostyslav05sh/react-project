@@ -1,6 +1,7 @@
 import {FC, PropsWithChildren} from "react";
-import {IGenreRes} from "../../../interfaces";
 import {useNavigate} from "react-router-dom";
+
+import {IGenreRes} from "../../../interfaces";
 
 interface IProps extends PropsWithChildren {
     genre: IGenreRes

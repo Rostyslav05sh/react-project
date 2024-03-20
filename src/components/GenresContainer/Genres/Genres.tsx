@@ -1,16 +1,17 @@
-import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {useEffect} from "react";
+
+import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {genreActions} from "../../../store";
 import {Genre} from "../Genre";
 
 const Genres = () => {
 
-const {genres} = useAppSelector(state => state.genres);
-const dispatch = useAppDispatch();
+    const {genres} = useAppSelector(state => state.genres);
+    const dispatch = useAppDispatch();
 
     useEffect(() => {
         dispatch(genreActions.getAll())
-    }, []);
+    }, [dispatch]);
 
     return (
         <div>

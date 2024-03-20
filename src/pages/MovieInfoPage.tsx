@@ -1,7 +1,8 @@
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+
 import {useAppDispatch, useAppLocation} from "../hooks";
 import {IMovieRes} from "../interfaces";
-import {useParams} from "react-router-dom";
-import React, {useEffect, useState} from "react";
 import {movieActions} from "../store";
 import {MovieInfo} from "../components";
 
@@ -11,8 +12,6 @@ const MovieInfoPage = () => {
     const [movieInfo, setMovieInfo] = useState<IMovieRes>(null)
     const dispatch = useAppDispatch();
     const {id} = useParams();
-
-    console.log(state)
 
     useEffect(() => {
         if (state?.movie || state?.movieByKeyWord || state?.movieBySearch) {

@@ -1,6 +1,7 @@
-import {useAppDispatch, useAppSelector, usePageQuery} from "../hooks";
 import React, {useEffect} from "react";
 import {useParams} from "react-router-dom";
+
+import {useAppDispatch, useAppSelector, usePageQuery} from "../hooks";
 import {genreActions} from "../store";
 import {MoviesByGenre} from "../components";
 
@@ -14,8 +15,6 @@ const GenresPage = () => {
     useEffect(() => {
         dispatch(genreActions.getMoviesByGenreId({id, page}))
     }, [id, page, dispatch]);
-
-    console.log(page)
 
     return (
         <div>

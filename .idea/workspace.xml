@@ -4,27 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/SearchSlice.ts" afterDir="false" />
+    <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="search">
+      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genres/Genres.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genres/Genres.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/usePageQuery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/usePageQuery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/searchInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/searchInterface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/AuthLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/AuthRequired.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/UseAppDispatch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/UseAppDispatch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/UseAppSelector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/UseAppSelector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/movieInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/movieInterface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GenresPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GenresPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MovieInfoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MovieInfoPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slices/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MoviePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ApiService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ApiService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/GenresSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/GenresSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/SearchSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/SearchSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/slices/moviesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/moviesSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
@@ -37,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -97,7 +103,8 @@
       <updated>1710758056814</updated>
       <workItem from="1710758057812" duration="346000" />
       <workItem from="1710758437295" duration="23736000" />
-      <workItem from="1710857738697" duration="21331000" />
+      <workItem from="1710857738697" duration="21669000" />
+      <workItem from="1710932908622" duration="9134000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -115,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710857758882</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="search">
+      <option name="closed" value="true" />
+      <created>1710879460243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710879460243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="search" />
+    <option name="LAST_COMMIT_MESSAGE" value="search" />
   </component>
 </project>

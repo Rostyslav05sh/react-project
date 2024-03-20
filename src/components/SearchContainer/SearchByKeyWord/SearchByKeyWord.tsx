@@ -1,7 +1,8 @@
 import React, {FC, PropsWithChildren} from "react";
-import {IMovieRes} from "../../../interfaces";
 import {Rating} from "@mui/material";
 import {useNavigate} from "react-router-dom";
+
+import {IMovieRes} from "../../../interfaces";
 import {poster} from "../../../constants";
 
 interface IProps extends PropsWithChildren {
@@ -17,10 +18,10 @@ const SearchByKeyWord: FC<IProps> = ({movieBySearch}) => {
     const image = poster + poster_path
 
     return (
-        <div onClick={() => navigate('/movieInfo', {state: {movie: movieBySearch}})}>
+        <div onClick={() => navigate('/movieInfo', {state: {movieBySearch}})}>
             <div>{title}</div>
             <img src={image} alt={`poster of ${title} movie`}/>
-            <Rating name="half-rating-read" defaultValue={vote_average/2} precision={0.5} readOnly size={"large"} />
+            <Rating name="half-rating-read" defaultValue={vote_average / 2} precision={0.5} readOnly size={"large"}/>
         </div>
     );
 };
