@@ -1,0 +1,15 @@
+.MovieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 12vh;
+}
+
+.MovieListButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0;
+}

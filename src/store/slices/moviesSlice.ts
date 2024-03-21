@@ -64,9 +64,6 @@ const moviesSlice = createSlice({
                 state.results = action.payload.results
                 state.page = action.payload.moviePage
             })
-            .addCase(clearMovies, state => {
-                state.results = []
-            })
     }
 })
 
@@ -75,8 +72,7 @@ const {reducer: movieReducer, actions} = moviesSlice;
 const movieActions = {
     ...actions,
     getAll,
-    getMovieById,
-    clearMovies
+    getMovieById
 }
 
 export {

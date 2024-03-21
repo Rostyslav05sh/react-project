@@ -11,7 +11,7 @@ const search = '/search/keyword?query='
 const urls = {
     movies: {
         base: movies,
-        movieById:(id:string) => `${movieIdFind}/${id}`,
+        movieById:(id:string) => `${movieIdFind}/${id}`
     },
     genres: {
         base: genres,

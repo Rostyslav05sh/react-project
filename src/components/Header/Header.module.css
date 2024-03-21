@@ -1,7 +1,38 @@
-.Header {
+.genresPanel {
+    position: absolute;
+    top: 10vh;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1468c0;
+    width: 15vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-height: 5vh;
-    border-bottom: 1px solid black;
+    height: 90vh;
+    cursor: pointer;
+    transition: .3s ease-in;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.genresPanelActive {
+    position: fixed;
+    top: 10vh;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1468c0;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    cursor: pointer;
+    transition: .3s ease-out;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    z-index: 10;
+}
+
+.HeaderHome {
+    cursor: pointer;
 }

@@ -33,7 +33,7 @@ const SearchPage: FC<IProps> = ({moviesBySearch}) => {
 
     return (
         <div>
-            {movieByKeyWordId && <SearchByKeyWord movieBySearch={movieByKeyWordId}/>}
+            {movieByKeyWordId && movieByKeyWordId.title && <SearchByKeyWord movieBySearch={movieByKeyWordId}/>}
         </div>
     );
 };

@@ -1,0 +1,70 @@
+.MovieInfo {
+    margin-top: 12vh;
+    width: 100%;
+}
+
+.MovieInfoTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 1vh;
+}
+
+.MovieInfoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posterDiv {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MovieInfoPoster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23vw;
+    height: 70vh;
+}
+
+.MovieInfoOverview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MovieInfoDateRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+}
+
+.genres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4vh;
+    left: -3.5vw;
+    gap: 1vw;
+    transition: .3s ease-in-out;
+}
+
+.genre {
+    border-radius: 35%;
+    flex-wrap: wrap;
+}
+
+.genre:hover {
+    background-color: #1976d2;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}

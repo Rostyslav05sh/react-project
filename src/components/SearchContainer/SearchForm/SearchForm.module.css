@@ -1,0 +1,35 @@
+.SearchForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 12vh;
+}
+
+.SearchFormInput {
+    position: fixed;
+    top: 1vh;
+    z-index: 20;
+}
+
+.SearchFormButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0;
+    width: 100vw;
+}
+
+.SearchFormButtonsNone {
+    display: none;;
+}
+
+.SearchFormMovies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 12vh;
+}

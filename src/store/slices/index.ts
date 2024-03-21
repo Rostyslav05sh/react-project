@@ -1,3 +1,5 @@
 export * from './GenresSlice'
 export * from './moviesSlice'
 export * from './SearchSlice'
+export * from './DarkModeSlice'
+export * from './GenresActiveSlice'

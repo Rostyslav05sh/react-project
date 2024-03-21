@@ -2,7 +2,7 @@ import {createBrowserRouter, Navigate} from "react-router-dom";
 import {MainLayout} from "./layouts";
 import {GenresPage, MovieInfoPage, MoviePage} from "./pages";
 import React from "react";
-import {SearchForm} from "./components/SearchContainer/SearchForm";
+import {SearchForm} from "./components";
 
 const router = createBrowserRouter([
     {

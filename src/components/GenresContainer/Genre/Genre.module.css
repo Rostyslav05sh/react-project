@@ -1,0 +1,9 @@
+ .genre {
+     color: white;
+     padding-bottom: 1vh;
+    }
+
+ .genreCol:hover {
+     border: 1px #5555ff;
+     background-color: #1976d2;
+ }
