@@ -12,6 +12,7 @@ import css from './GenrePage.module.css'
 const GenresPage = () => {
 
     const {moviesByGenre} = useAppSelector(state => state.genres);
+    const {darkMode} = useAppSelector(state => state.darkMode);
     const dispatch = useAppDispatch();
     const {page, prev, next} = usePageQuery();
     const {id} = useParams();
@@ -22,15 +23,15 @@ const GenresPage = () => {
 
     return (
         <div>
-            <div className={css.GenresPage}>
+            <div className={darkMode? css.GenresPage : css.GenresPageDark}>
             {moviesByGenre.map(movie => <MoviesByGenre key={movie.id} movie={movie}/>)}
             </div>
             <div className={css.GenresPageButtons}>
-                <Button sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}} variant="contained" onClick={prev} disabled={+page <= 1}>Previous</Button>
+                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}} variant="contained" onClick={prev} disabled={+page <= 1}>Previous</Button>
                 <Badge badgeContent={page} color="primary">
-                    <ArticleIcon color="action"/>
+                    <ArticleIcon color="action" sx={{color: darkMode? 'action' : 'white'}}/>
                 </Badge>
-                <Button sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}} variant="contained" onClick={next} disabled={+page >= 500}>Next</Button>
+                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}} variant="contained" onClick={next} disabled={+page >= 500}>Next</Button>
             </div>
         </div>
     );

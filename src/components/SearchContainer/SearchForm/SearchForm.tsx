@@ -70,6 +70,7 @@ const SearchForm = () => {
     const [keyWord, setKeyWord] = useState<string>();
     const navigate = useNavigate();
     const {result} = useAppSelector(state => state.search);
+    const {darkMode} = useAppSelector(state => state.darkMode);
     const dispatch = useAppDispatch();
     const {page, prev, next} = usePageQuery();
 
@@ -104,7 +105,7 @@ const SearchForm = () => {
                                     />
                                 </form>
                             </Search>
-                            <Button sx={{color: 'white', fontWeight: 'bold', fontSize: '16px'}} variant="contained"
+                            <Button sx={darkMode? {color: 'white', fontWeight: 'bold', fontSize: '16px'} : {bgcolor: '#0000b0', color: 'white', fontWeight: 'bold', fontSize: '16px'}} variant="contained"
                                     onClick={handleSubmit(searchMovie)}>Search</Button>
                         </Toolbar>
                     </AppBar>

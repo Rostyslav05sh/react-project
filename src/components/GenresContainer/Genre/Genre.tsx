@@ -17,6 +17,7 @@ const Genre: FC<IProps> = ({genre}) => {
 
     const {id, name} = genre;
     const {genresActive} = useAppSelector(state => state.genresActive);
+    const {darkMode} = useAppSelector(state => state.darkMode);
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
     const setGenresActive = () => {
@@ -25,7 +26,7 @@ const Genre: FC<IProps> = ({genre}) => {
 
     return (
         <div className={`${css.genre} ${css.genreCol}`}>
-            <Button variant="contained" sx={{color: 'white', height: '3.5vh', justifyContent: 'start', width: '12vw'}} onClick={() => {
+            <Button variant="contained" sx={{height: '3.5vh', justifyContent: 'start', width: '12vw', color: 'white', bgcolor: darkMode? 'primary' : '#0000b0'}} onClick={() => {
                 navigate(`/genre/${id}`)
                 setGenresActive()
             }

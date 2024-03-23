@@ -8,6 +8,7 @@ import Badge from "@mui/material/Badge";
 import DoDisturbIcon from "@mui/icons-material/DoDisturb";
 import ChildCareIcon from "@mui/icons-material/ChildCare";
 import css from './SearchByKeyWord.module.css'
+import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 interface IProps extends PropsWithChildren {
     movieBySearch: IMovieRes
@@ -27,7 +28,11 @@ const SearchByKeyWord: FC<IProps> = ({movieBySearch}) => {
             <img className={css.SearchByKeyWordPoster} src={image} alt={`poster of ${title} movie`}/>
             <div className={css.SearchByKeyWordInfo}>
                 <Rating sx={{zIndex: '1'}} name="half-rating-read" defaultValue={vote_average / 2} precision={0.5} readOnly
-                        size={"large"}/>
+                        size={"large"}
+                        emptyIcon={
+                            <StarBorderIcon fontSize="inherit" sx={{ color: 'grey'}}/>
+                        }
+                />
                 <div>{release_date}</div>
                 <div>{adult ?
                     <Badge badgeContent={'18+'} color="error">

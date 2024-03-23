@@ -4,39 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="All functional work properly">
-      <change afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/GenresPage/GenrePage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/GenresPage/GenresPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/GenresPage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/DarkModeSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/GenresActiveSlice.ts" afterDir="false" />
+    <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="Added css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/urls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/urls.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/GenresPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slices/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slices/moviesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/moviesSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GenresPage/GenrePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GenresPage/GenrePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GenresPage/GenresPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GenresPage/GenresPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +96,8 @@
       <workItem from="1710758437295" duration="23736000" />
       <workItem from="1710857738697" duration="21669000" />
       <workItem from="1710932908622" duration="15907000" />
-      <workItem from="1711010967170" duration="35330000" />
+      <workItem from="1711010967170" duration="35733000" />
+      <workItem from="1711185686793" duration="15564000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -144,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710942263165</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added css">
+      <option name="closed" value="true" />
+      <created>1711056161037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711056161037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +150,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="search" />
     <MESSAGE value="All functional work properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="All functional work properly" />
+    <MESSAGE value="Added css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added css" />
   </component>
 </project>

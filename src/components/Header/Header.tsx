@@ -110,7 +110,7 @@ const Header = () => {
 
     return (
         <div>
-            <AppBar position="fixed" sx={{zIndex: '10'}}>
+            <AppBar position="fixed" sx={{zIndex: '10', bgcolor: darkMode? 'primary' : 'darkblue'}}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Typography
@@ -160,7 +160,7 @@ const Header = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <div className={genresActive? css.genresPanelActive : css.genresPanel}>
+            <div className={darkMode? genresActive? css.genresPanelActive : css.genresPanel : genresActive? css.genresPanelActiveDark : css.genresPanel}>
                 <div>
                     <Genres/>
                 </div>
