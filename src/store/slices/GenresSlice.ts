@@ -7,13 +7,13 @@ import {genreService} from "../../services";
 interface IState {
     genres: IGenreRes[]
     genre: IGenreRes
-    moviesByGenre: IMovieRes[]
+    moviesByGenre: IMovieRes[],
 }
 
 const initialState: IState = {
     genres: [],
     genre: null,
-    moviesByGenre: []
+    moviesByGenre: [],
 };
 
 const getAll = createAsyncThunk<IGenre, void>(

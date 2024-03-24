@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom";
 import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
 import ArticleIcon from "@mui/icons-material/Article";
+
 import {useAppDispatch, useAppSelector, usePageQuery} from "../../hooks";
 import {genreActions} from "../../store";
 import {MoviesByGenre} from "../../components";
@@ -23,15 +24,17 @@ const GenresPage = () => {
 
     return (
         <div>
-            <div className={darkMode? css.GenresPage : css.GenresPageDark}>
-            {moviesByGenre.map(movie => <MoviesByGenre key={movie.id} movie={movie}/>)}
+            <div className={darkMode ? css.GenresPage : css.GenresPageDark}>
+                {moviesByGenre.map(movie => <MoviesByGenre key={movie.id} movie={movie}/>)}
             </div>
             <div className={css.GenresPageButtons}>
-                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}} variant="contained" onClick={prev} disabled={+page <= 1}>Previous</Button>
+                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}}
+                        variant="contained" onClick={prev} disabled={+page <= 1}>Previous</Button>
                 <Badge badgeContent={page} color="primary">
-                    <ArticleIcon color="action" sx={{color: darkMode? 'action' : 'white'}}/>
+                    <ArticleIcon color="action" sx={{color: darkMode ? 'action' : 'white'}}/>
                 </Badge>
-                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}} variant="contained" onClick={next} disabled={+page >= 500}>Next</Button>
+                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px'}}
+                        variant="contained" onClick={next} disabled={+page >= 500}>Next</Button>
             </div>
         </div>
     );

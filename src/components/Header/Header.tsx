@@ -1,3 +1,4 @@
+import React from "react";
 import {useNavigate} from "react-router-dom";
 
 import {styled} from '@mui/material/styles';
@@ -9,20 +10,14 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
-import css from './Header.module.css'
 import {Genres} from "../GenresContainer";
 import {useAppDispatch, useAppSelector} from "../../hooks";
 import {darkModeActions, genresActiveActions} from "../../store";
-import React from "react";
+import css from './Header.module.css'
 
 const MaterialUISwitch = styled(Switch)(({theme}) => ({
     width: 62,
@@ -87,30 +82,9 @@ const Header = () => {
         dispatch(genresActiveActions.setActive())
     }
 
-    const pages = ['Genres', 'Search'];
-
-    const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-    const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-
-    const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-
-
     return (
         <div>
-            <AppBar position="fixed" sx={{zIndex: '10', bgcolor: darkMode? 'primary' : 'darkblue'}}>
+            <AppBar position="fixed" sx={{zIndex: '10', bgcolor: darkMode ? 'primary' : 'darkblue'}}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Typography
@@ -134,7 +108,8 @@ const Header = () => {
                         <div>
                             <FormGroup>
                                 <FormControlLabel
-                                    control={<MaterialUISwitch sx={{m: 1}} checked={darkMode} onChange={toggleDarkMode}/>}
+                                    control={<MaterialUISwitch sx={{m: 1}} checked={darkMode}
+                                                               onChange={toggleDarkMode}/>}
                                     label=''
                                 />
                             </FormGroup>
@@ -160,7 +135,8 @@ const Header = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <div className={darkMode? genresActive? css.genresPanelActive : css.genresPanel : genresActive? css.genresPanelActiveDark : css.genresPanel}>
+            <div
+                className={darkMode ? genresActive ? css.genresPanelActive : css.genresPanel : genresActive ? css.genresPanelActiveDark : css.genresPanel}>
                 <div>
                     <Genres/>
                 </div>

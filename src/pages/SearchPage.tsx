@@ -10,9 +10,9 @@ interface IProps extends PropsWithChildren {
 }
 
 const SearchPage: FC<IProps> = ({moviesBySearch}) => {
-    // console.log(moviesBySearch);
 
     const [movieByKeyWordId, setMovieByKeyWordId] = useState<IMovieRes>(null)
+
     const dispatch = useAppDispatch();
 
 
@@ -31,9 +31,11 @@ const SearchPage: FC<IProps> = ({moviesBySearch}) => {
         }
     }, [moviesBySearch, moviesBySearch?.id, dispatch]);
 
+
     return (
         <div>
-            {movieByKeyWordId && movieByKeyWordId.title && <SearchByKeyWord movieBySearch={movieByKeyWordId}/>}
+            {movieByKeyWordId && movieByKeyWordId.title && movieByKeyWordId.poster_path &&
+                <SearchByKeyWord movieBySearch={movieByKeyWordId}/>}
         </div>
     );
 };

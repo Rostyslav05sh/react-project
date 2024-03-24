@@ -4,25 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="Added css">
+    <list default="true" id="65d94199-95f5-4d7c-b0c2-1d1e98733147" name="Changes" comment="added dark theme for Movies movieInfo and Genres">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/Genre/Genre.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/MoviesByGenre.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresContainer/MoviesByGenre/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieInfoContainer/MovieInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/MovieListCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListCardContainer/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/MovieList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesContainer/MovieListContainer/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/SearchByKeyWord.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchByKeyWord/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm/SearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/urls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/urls.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/UseAppSelector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/UseAppSelector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/usePageQuery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/usePageQuery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/GenresPage/GenrePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GenresPage/GenrePage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/GenresPage/GenresPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GenresPage/GenresPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/GenresSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/GenresSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,8 @@
       <workItem from="1710857738697" duration="21669000" />
       <workItem from="1710932908622" duration="15907000" />
       <workItem from="1711010967170" duration="35733000" />
-      <workItem from="1711185686793" duration="15564000" />
+      <workItem from="1711185686793" duration="16049000" />
+      <workItem from="1711291241654" duration="9355000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -139,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711056161037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added dark theme for Movies movieInfo and Genres">
+      <option name="closed" value="true" />
+      <created>1711211424338</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711211424338</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +165,7 @@
     <MESSAGE value="search" />
     <MESSAGE value="All functional work properly" />
     <MESSAGE value="Added css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added css" />
+    <MESSAGE value="added dark theme for Movies movieInfo and Genres" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dark theme for Movies movieInfo and Genres" />
   </component>
 </project>

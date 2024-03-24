@@ -16,12 +16,49 @@
     height: 8vh;
 }
 
+.SearchByKeyWordTitleDark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    height: 8vh;
+    color: white;
+}
+
 .SearchByKeyWordPoster {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 23vw;
     height: 70vh;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.SearchByKeyWordPoster:hover {
+    -webkit-box-shadow: -2px 0px 62px 11px rgb(25, 118, 210);
+    -moz-box-shadow: -2px 0px 62px 11px rgb(25, 118, 210);
+    box-shadow: -2px 0px 62px 11px rgb(25, 118, 210);
+    transition: .3s ease-in-out;
+}
+
+.SearchByKeyWordPosterDark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23vw;
+    height: 70vh;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.SearchByKeyWordPosterDark:hover {
+    -webkit-box-shadow: -2px 0px 62px 11px rgb(0, 0, 139);
+    -moz-box-shadow: -2px 0px 62px 11px rgb(0, 0, 139);
+    box-shadow: -2px 0px 62px 11px rgb(0, 0, 139);
+    transition: .3s ease-in-out;
 }
 
 .SearchByKeyWordInfo {
@@ -30,4 +67,12 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 2vh;
+}
+
+.SearchByKeyWordDate {
+    color: black;
+}
+
+.SearchByKeyWordDateDark {
+    color: white;
 }

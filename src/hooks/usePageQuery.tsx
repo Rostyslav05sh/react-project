@@ -1,5 +1,5 @@
-import {useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
+import {useSearchParams} from "react-router-dom";
 
 const usePageQuery = () => {
 
@@ -9,7 +9,7 @@ const usePageQuery = () => {
     useEffect(() => {
         const page = query.get('page');
         if (page === null || page === undefined) {
-            setQuery({ page: '1' });
+            setQuery({page: '1'});
         }
     }, [query, setQuery]);
 

@@ -8,7 +8,6 @@ import {useAppDispatch, useAppSelector, usePageQuery} from "../../../hooks";
 import {MovieListCard} from "../MovieListCardContainer";
 import {movieActions} from "../../../store";
 import css from './MovieList.module.css'
-import {isDisabled} from "@testing-library/user-event/dist/utils";
 
 const MoviesList = () => {
 
@@ -23,15 +22,27 @@ const MoviesList = () => {
 
     return (
         <div>
-            <div className={darkMode? css.MovieList : css.MovieListDark}>
-            {results && results.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
+            <div className={darkMode ? css.MovieList : css.MovieListDark}>
+                {results && results.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
             </div>
             <div className={css.MovieListButtons}>
-                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px', color: darkMode? 'primary' : 'white', bgcolor: darkMode? 'primary' : '#0000b0'}} variant="contained" onClick={prev} disabled={+page <= 1}>Previous</Button>
+                <Button className={!darkMode && css.Button} sx={{
+                    width: '7vw',
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    color: darkMode ? 'primary' : 'white',
+                    bgcolor: darkMode ? 'primary' : '#0000b0'
+                }} variant="contained" onClick={prev} disabled={+page <= 1}>Previous</Button>
                 <Badge badgeContent={page} color='primary'>
-                    <ArticleIcon sx={{color: darkMode? 'action' : 'white'}}/>
+                    <ArticleIcon sx={{color: darkMode ? 'action' : 'white'}}/>
                 </Badge>
-                <Button className={!darkMode && css.Button} sx={{width: '7vw', fontWeight: 'bold', fontSize: '16px', color: darkMode? 'primary' : 'white', bgcolor: darkMode? 'primary' : '#0000b0'}} variant="contained" onClick={next} disabled={+page >= 500}>Next</Button>
+                <Button className={!darkMode && css.Button} sx={{
+                    width: '7vw',
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    color: darkMode ? 'primary' : 'white',
+                    bgcolor: darkMode ? 'primary' : '#0000b0'
+                }} variant="contained" onClick={next} disabled={+page >= 500}>Next</Button>
             </div>
         </div>
     );
